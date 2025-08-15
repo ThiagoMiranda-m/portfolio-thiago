@@ -4,6 +4,10 @@ import About from './components/About'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Skills from "./components/Skills"
+import linkedinIcon from "./icons/linkedin.png";
+import emailIcon from "./icons/email.png";
+import githubIcon from "./icons/github2.png";
+import "./header.css"
 import { gsap } from 'gsap'
 
 export default function App() {
@@ -13,19 +17,34 @@ export default function App() {
 
   return (
     <div className="app" style={{ background: '#08070b', color: 'white', minHeight: '100vh' }}>
-      <header className="p-3 d-flex justify-content-between align-items-center">
-        <div className="d-flex gap-3 align-items-center">
-          <a href="https://www.linkedin.com.br/tanm-dev" className="header-icon" id="lnk-linkedin">[linkedin]</a>
-          <a href="mailto:thiagoanm75@gmail.com" className="header-icon" id="lnk-email">[email]</a>
-          <a href="https://github.com/ThiagoMiranda-m" className="header-icon" id="lnk-github">[github]</a>
-        </div>
-        <nav>
-          <a href="#about" className="me-3">Sobre</a>
-          <a href="#skills" className="me-3">Skills</a>
-          <a href="#projects" className="me-3">Projetos</a>
-          <a href="#contact">Contate-me</a>
-        </nav>
-      </header>
+      <header className="header-container">
+      <div className="social-icons">
+        <a
+          href="https://www.linkedin.com/in/seu-usuario"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={linkedinIcon} alt="LinkedIn" className="icon" />
+        </a>
+        <a href="mailto:seuemail@exemplo.com">
+          <img src={emailIcon} alt="Email" className="icon" />
+        </a>
+        <a
+          href="https://github.com/seu-usuario"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={githubIcon} alt="GitHub" className="icon" />
+        </a>
+      </div>
+
+      <nav className="menu">
+        <a href="#sobre">Sobre</a>
+        <a href="#skills">Skills</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contate-me</a>
+      </nav>
+    </header>
 
       <main className="container">
         <section id="hero" className="section my-5">
