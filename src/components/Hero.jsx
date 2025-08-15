@@ -13,13 +13,15 @@ export default function Hero() {
     })
 
     // Brilho da foto
-    gsap.to('.profile-glow', {
-      boxShadow: '0 0 40px 12px rgba(121,72,219,0.16)',
-      duration: 1.2,
-      yoyo: true,
-      repeat: -1,
-      ease: 'sine.inOut'
+    gsap.to('.profile-photo', {
+    filter: 'drop-shadow(0 0 20px rgba(121,72,219,0.5))',
+    duration: 1.2,
+    yoyo: true,
+    repeat: -1,
+    ease: 'sine.inOut'
     })
+
+
 
     // Entrada lateral
     gsap.from('.hero-left', { x: -100, opacity: 0, duration: 1, ease: 'power3.out' })
@@ -44,12 +46,17 @@ export default function Hero() {
       </div>
       <div className="col-md-5 text-center hero-right">
         <div className="profile-glow d-inline-block p-3 rounded-circle">
-          <img
-            src="/profile.png"
-            alt="profile"
-            className="rounded-circle profile-photo"
-            style={{ width: 160, height: 160, objectFit: 'cover' }}
-          />
+      <img
+        src="/profile.png"
+        alt="profile"
+        className="rounded-circle profile-photo"
+        style={{
+        width: 220, // antes era 160
+        height: 220,
+        objectFit: 'cover'
+        }}
+        />
+
         </div>
       </div>
     </div>

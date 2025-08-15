@@ -20,17 +20,17 @@ export default function App() {
       <header className="header-container">
       <div className="social-icons">
         <a
-          href="https://www.linkedin.com/in/seu-usuario"
+          href="https://www.linkedin.com/in/tanm-dev"
           target="_blank"
           rel="noopener noreferrer"
         >
           <img src={linkedinIcon} alt="LinkedIn" className="icon" />
         </a>
-        <a href="mailto:seuemail@exemplo.com">
+        <a href="mailto:thiagoanm75@gmail.com">
           <img src={emailIcon} alt="Email" className="icon" />
         </a>
         <a
-          href="https://github.com/seu-usuario"
+          href="https://github.com/ThiagoMiranda-m"
           target="_blank"
           rel="noopener noreferrer"
         >
