@@ -8,7 +8,7 @@ A aplicação foi criada para ser **altamente visual**, com efeitos sutis de **n
 
 ## 🚀 Demonstração  
 
-🔗 [Acesse o portfólio online](https://seu-link-deploy.vercel.app) *(substituir pelo link do deploy no Vercel/Netlify)*  
+🔗 [Acesse o portfólio online](https://thiago-miranda.vercel.app/) *(substituir pelo link do deploy no Vercel/Netlify)*  
 
 ---
 
