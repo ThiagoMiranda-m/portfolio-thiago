@@ -6,7 +6,7 @@ export default function Hero() {
     // Pulso do texto "Bem-vindo!"
     gsap.to('.hero-welcome', {
       opacity: 0.4, // não some totalmente
-      duration: 1.5,
+      duration: 1.7,
       yoyo: true,
       repeat: -1,
       ease: 'sine.inOut'
@@ -41,7 +41,7 @@ export default function Hero() {
           Um homem movido ao amor à tecnologia, código e curiosidade.
         </p>
         <h4 className="mt-4 hero-title">
-          Thiago André | Desenvolvedor Full-stack
+          Thiago André | Desenvolvedor Full-stack 💻
         </h4>
       </div>
       <div className="col-md-5 text-center hero-right">
@@ -51,8 +51,8 @@ export default function Hero() {
         alt="profile"
         className="rounded-circle profile-photo"
         style={{
-        width: 220, // antes era 160
-        height: 220,
+        width: 230, // antes era 160
+        height: 230,
         objectFit: 'cover'
         }}
         />
