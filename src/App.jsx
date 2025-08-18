@@ -7,7 +7,7 @@ import Skills from "./components/Skills"
 import linkedinIcon from "./icons/linkedin.png";
 import emailIcon from "./icons/email.png";
 import githubIcon from "./icons/github2.png";
-import "./header.css"
+import "./styles.css";
 import { gsap } from 'gsap'
 
 export default function App() {

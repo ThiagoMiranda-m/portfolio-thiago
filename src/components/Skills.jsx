@@ -1,5 +1,5 @@
 import React from "react";
-import "../Skills.css";
+import "../styles.css";
 
 // Importando as imagens do src/icons
 import javaIcon from "../icons/java.png";

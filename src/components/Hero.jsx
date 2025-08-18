@@ -14,8 +14,8 @@ export default function Hero() {
 
     // Brilho da foto
     gsap.to('.profile-photo', {
-    filter: 'drop-shadow(0 0 20px rgba(121,72,219,0.5))',
-    duration: 1.2,
+    filter: 'drop-shadow(0 0 20px rgba(127, 89, 204, 0.5))',
+    duration: 1.7,
     yoyo: true,
     repeat: -1,
     ease: 'sine.inOut'
