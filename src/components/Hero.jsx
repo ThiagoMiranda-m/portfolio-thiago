@@ -14,14 +14,12 @@ export default function Hero() {
 
     // Brilho da foto
     gsap.to('.profile-photo', {
-    filter: 'drop-shadow(0 0 20px rgba(127, 89, 204, 0.5))',
-    duration: 1.7,
-    yoyo: true,
-    repeat: -1,
-    ease: 'sine.inOut'
+      filter: 'drop-shadow(0 0 20px rgba(127, 89, 204, 0.5))',
+      duration: 1.7,
+      yoyo: true,
+      repeat: -1,
+      ease: 'sine.inOut'
     })
-
-
 
     // Entrada lateral
     gsap.from('.hero-left', { x: -100, opacity: 0, duration: 1, ease: 'power3.out' })
@@ -44,19 +42,30 @@ export default function Hero() {
           Thiago André | Desenvolvedor Full-stack 💻
         </h4>
       </div>
+
       <div className="col-md-5 text-center hero-right">
         <div className="profile-glow d-inline-block p-3 rounded-circle">
-      <img
-        src="/profile.png"
-        alt="profile"
-        className="rounded-circle profile-photo"
-        style={{
-        width: 230, // antes era 160
-        height: 230,
-        objectFit: 'cover'
-        }}
-        />
+          <img
+            src="/profile.png"
+            alt="profile"
+            className="rounded-circle profile-photo"
+            style={{
+              width: 230,
+              height: 230,
+              objectFit: 'cover'
+            }}
+          />
+        </div>
 
+        {/* Botão de Download do Currículo */}
+        <div className="mt-4">
+          <a 
+            href="../CurriculoThiago.pdf" 
+            download="CurriculoThiago.pdf"
+            className="btn btn-purple"
+          >
+            📄 Baixar CV
+          </a>
         </div>
       </div>
     </div>

@@ -6,7 +6,7 @@ export default function Contact(){
       <h3 className="section-title">Contate-me <span className="neon-line"></span></h3>
       <form action={FORM_SPRE_ENDPOINT} method="POST" className="mt-3">
         <div className="mb-3">
-          <label>Name</label>
+          <label>Nome</label>
           <input name="name" className="form-control" />
         </div>
         <div className="mb-3">
@@ -14,12 +14,12 @@ export default function Contact(){
           <input name="email" className="form-control" />
         </div>
         <div className="mb-3">
-          <label>Message</label>
+          <label>Mensagem</label>
           <textarea name="message" className="form-control" rows="6"></textarea>
         </div>
         <div className="d-flex gap-3">
-          <button type="submit" className="btn btn-purple">Send</button>
-          <a className="btn btn-outline-light" href="mailto:thiagoanm75@gmail.com">mailto</a>
+          <button type="submit" className="btn btn-purple">Enviar</button>
+          <a className="btn btn-outline-light" href="mailto:thiagoanm75@gmail.com">Via email</a>
         </div>
       </form>
     </div>
