@@ -1,132 +1,126 @@
-# 🌐 Portfolio - Thiago Miranda  
+![Status](https://img.shields.io/badge/status-active-success.svg)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow?style=for-the-badge&logo=javascript)
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Deploy](https://img.shields.io/badge/Deploy-Vercel-black?style=for-the-badge&logo=vercel)
 
-Este projeto é um **portfólio moderno e responsivo**, desenvolvido em **React** com **Bootstrap**, **Tailwind** e **GSAP**, com o objetivo de apresentar minha trajetória, habilidades, projetos e contatos de forma profissional e atraente.  
+# 🚀 Portfólio Pessoal - Thiago Miranda  
 
-A aplicação foi criada para ser **altamente visual**, com efeitos sutis de **neon glow, blur dinâmico e interações suaves**, proporcionando uma experiência única para recrutadores e visitantes.  
+Um portfólio moderno e responsivo desenvolvido em **React + Bootstrap**, criado para destacar minhas habilidades, projetos e facilitar o contato com recrutadores.  
+
+O projeto foi pensado para ser **altamente visual, fluido e atraente**, com animações suaves e uma interface moderna que valoriza a apresentação dos meus trabalhos.  
 
 ---
 
-## 🚀 Demonstração  
+## 🖼️ Demonstração  
 
-🔗 [Acesse o portfólio online](https://thiago-miranda.vercel.app/) 
+> _(Adicione aqui prints ou link para o deploy do projeto, ex: [vercel.app](https://seu-portfolio.vercel.app))_  
 
 ---
 
 ## ✨ Funcionalidades  
 
-- 📌 **Seção Sobre Mim** → Descrição detalhada sobre minha trajetória.  
-- 🖼️ **Foto de Perfil em destaque** com animação pulsante e efeito de glow interativo.  
-- 📂 **Projetos** → Cards organizados, com informações de repositórios do GitHub (excluindo os não relevantes).  
-- 🎨 **Design Responsivo** → Funciona em dispositivos móveis, tablets e desktops.  
-- 🔮 **Animações modernas** com GSAP e efeitos de blur/brilho sob o cursor.  
-- ⚡ **Performance otimizada** → Build leve e rápido, pronto para deploy.  
+✔️ Layout **One Page** moderno e responsivo  
+✔️ Seções dedicadas para **sobre mim, projetos e contato**  
+✔️ **Foto de perfil** em destaque no topo  
+✔️ **Currículo em PDF** disponível para download  
+✔️ Integração com **GitHub** para listar projetos automaticamente  
+✔️ Formulário de contato funcional com **Formspree**  
+✔️ Botão de contato direto por **e-mail (mailto)**  
+✔️ **Footer moderno** com ícones de redes sociais (LinkedIn e Email)  
+✔️ Animações suaves para melhorar a experiência do usuário  
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas  
 
-- **Frontend**:  
-  - React.js  
-  - Bootstrap 5  
-  - Tailwind CSS  
-  - GSAP (animações)  
-
-- **Integrações**:  
-  - GitHub API (listagem automática de projetos)  
-
-- **Ferramentas & Deploy**:  
-  - Vercel (ou Netlify) para hospedagem  
-  - Git & GitHub para versionamento  
+- [React](https://reactjs.org/)  
+- [Bootstrap 5](https://getbootstrap.com/)  
+- [Formspree](https://formspree.io/) (para envio de mensagens)  
+- [LocalStorage](https://developer.mozilla.org/pt-BR/docs/Web/API/Window/localStorage) (para salvar histórico do usuário)  
+- [React Router](https://reactrouter.com/) _(caso você tenha navegação futura)_  
 
 ---
 
-## 📂 Estrutura de Pastas  
+## 📂 Estrutura do Projeto  
 
-\`\`\`bash
-📦 portfolio
- ┣ 📂 public          # Arquivos estáticos (favicon, imagens, curriculo.pdf)
- ┣ 📂 src
- ┃ ┣ 📂 components    # Componentes reutilizáveis (Header, About, Projects, Contact)
- ┃ ┣ 📂 styles        # Estilos customizados
- ┃ ┣ App.js           # Estrutura principal da aplicação
- ┃ ┗ index.js         # Ponto de entrada
- ┣ package.json       # Dependências e scripts
- ┗ README.md          # Documentação
-\`\`\`
-
----
-
-## ⚙️ Instalação e Uso Local  
-
-Clone o repositório e rode localmente:  
-
-\`\`\`bash
-# Clonar repositório
-git clone https://github.com/seu-usuario/portfolio.git
-
-# Acessar pasta
-cd portfolio
-
-# Instalar dependências
-npm install
-
-# Rodar em modo desenvolvimento
-npm start
-\`\`\`
-
-O projeto ficará disponível em **http://localhost:3000**.  
+```bash
+├── public/
+│   ├── profile.jpg          # Foto de perfil
+│   ├── Curriculo_ThiagoMiranda.pdf  # Currículo para download
+│
+├── src/
+│   ├── components/
+│   │   ├── Contact.jsx      # Formulário de contato integrado ao Formspree
+│   │   ├── Footer.jsx       # Rodapé com ícones e link para redes
+│   │   ├── Projects.jsx     # Lista de projetos puxados do GitHub
+│   │   ├── About.jsx        # Seção "Sobre mim"
+│   │   └── Navbar.jsx       # Navegação principal
+│   │
+│   ├── assets/
+│   │   └── icons/           # Ícones PNG usados no Footer
+│   │
+│   ├── App.jsx              # Estrutura principal do portfólio
+│   └── index.js             # Ponto de entrada
+│
+├── package.json
+└── README.md
+```
 
 ---
 
-## 📦 Build para Produção  
+## ⚙️ Como Rodar Localmente  
 
-Para gerar os arquivos otimizados para deploy:  
+1. Clone este repositório:  
+   ```bash
+   git clone https://github.com/seu-usuario/portfolio.git
+   cd portfolio
+   ```
 
-\`\`\`bash
+2. Instale as dependências:  
+   ```bash
+   npm install
+   ```
+
+3. Inicie o servidor local:  
+   ```bash
+   npm start
+   ```
+
+4. O projeto estará disponível em:  
+   ```
+   http://localhost:3000
+   ```
+
+---
+
+## 🌍 Deploy  
+
+Este projeto pode ser facilmente hospedado em:  
+
+- [Vercel](https://vercel.com/)  
+- [Netlify](https://www.netlify.com/)  
+- [GitHub Pages](https://pages.github.com/)  
+
+Exemplo de deploy no Vercel:  
+```bash
 npm run build
-\`\`\`
-
-Os arquivos finais estarão na pasta **/build**.  
+vercel deploy
+```
 
 ---
 
-## 🚀 Deploy  
+## 📬 Contato  
 
-### Vercel  
-1. Suba o projeto no GitHub.  
-2. Acesse [Vercel](https://vercel.com), crie um novo projeto e conecte ao repositório.  
-3. Deploy automático → \`https://seu-portfolio.vercel.app\`.  
-
-### Netlify  
-1. Acesse [Netlify](https://netlify.com).  
-2. Conecte seu repositório GitHub.  
-3. Configure o comando de build \`npm run build\` e a pasta \`build/\`.  
+📧 Email: [thiagoanm75@gmail.com](mailto:thiagoanm75@gmail.com)  
+🔗 LinkedIn: [linkedin.com/in/seu-linkedin](https://www.linkedin.com/)  
 
 ---
 
 ## 👨‍💻 Autor  
 
-**Thiago Miranda**  
-- 💼 Desenvolvedor Full Stack  
-- 📧 thiagoanm75@gmail.com  
-- 🔗 [LinkedIn](https://www.linkedin.com/in/seu-linkedin)  
-- 🐙 [GitHub](https://github.com/seu-usuario)  
+Desenvolvido com 💜 por **Thiago Miranda**.  
 
----
-
-## 📜 Licença  
-
-Este projeto está sob a licença MIT – sinta-se livre para usar, modificar e compartilhar.  
-
----
-
-## ⭐ Contribuições  
-
-Contribuições, sugestões e feedbacks são sempre bem-vindos!  
-Se quiser colaborar:  
-
-1. Faça um fork do repositório  
-2. Crie uma branch (\`git checkout -b feature/nova-feature\`)  
-3. Commit suas alterações (\`git commit -m 'Adiciona nova feature'\`)  
-4. Push para a branch (\`git push origin feature/nova-feature\`)  
-5. Abra um Pull Request  
+Se este projeto te ajudou, não esqueça de deixar uma ⭐ no repositório!  
